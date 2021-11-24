@@ -856,4 +856,11 @@ editmenu = Menu(menubar, tearoff = 0)
 
 menubar.add_cascade(label = 'Edit', menu = editmenu) 
 
-editmenu.add_command(lab
+editmenu.add_command(label = "Copy")
+editmenu.add_separator()
+editmenu.add_command(label = "Paste")
+
+root.config(menu=menubar)
+
+root.mainloop()
+
